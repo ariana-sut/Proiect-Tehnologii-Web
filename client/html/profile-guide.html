@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalGuide - Profil ghid</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/profile-guide.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">LocalGuide</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Evenimente</a>
+      <a href="dashboard-guide.html">Panou ghid</a>
+      <a href="profile-guide.html" class="active">Profilul meu</a>
+      <a href="#" class="btn-nav-auth" id="logout-btn">Deconectare</a>
+    </nav>
+  </header>
+
+  <main class="profile-wrapper">
+    <section class="profile-card">
+      <div class="profile-header">
+        <img src="https://placehold.co/150x150/332E3C/ffffff?text=Ghid" alt="Avatar ghid" id="avatar-preview" class="avatar-preview">
+        <div class="profile-header-info">
+          <h1 id="guide-display-name">Profil</h1>
+          <p id="guide-display-email">Completează-ți informațiile vizibile turiștilor pe paginile tururilor.</p>
+          <label for="guide-avatar-file" class="btn-upload-photo">Încarcă fotografie</label>
+          <input type="file" id="guide-avatar-file" accept="image/*" hidden>
+        </div>
+      </div>
+
+      <form id="guide-profile-form">
+        <div class="form-group">
+          <label for="guide-name">Nume afișat</label>
+          <input type="text" id="guide-name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="guide-area">Zonă de activitate</label>
+          <input type="text" id="guide-area" name="activity_area" placeholder="ex: Timișoara - Piața Unirii, Cetate, Fabric" required>
+        </div>
+
+        <div class="form-group">
+          <label for="guide-bio-input">Prezentare (Bio)</label>
+          <textarea id="guide-bio-input" name="bio" rows="4" placeholder="Scrie câteva cuvinte despre experiența ta și pasiunea pentru istoria/cultura locală..."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Salvează profilul</button>
+        </div>
+        <p id="profile-feedback" class="profile-feedback"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

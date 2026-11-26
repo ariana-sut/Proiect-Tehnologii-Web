@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalGuide - Înregistrare</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/autentification.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">LocalGuide</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Evenimente</a>
+      <a href="login.html" class="btn-nav-auth">Autentificare</a>
+    </nav>
+  </header>
+  
+  <main class="auth-container">
+    <div class="register-card">
+      <h1 class="auth-title">Înregistrare</h1>
+      <form id="register-form" class="register-grid">
+        <div>
+          <label for="reg-name">Nume</label>
+          <input type="text" id="reg-name" name="name" class="form-control" required>
+        </div>
+        
+        <div>
+          <label for="reg-email">Email</label>
+          <input type="email" id="reg-email" name="email" class="form-control" required>
+        </div>
+        
+        
+        <div>
+          <label for="reg-password">Parolă</label>
+          <input type="password" id="reg-password" name="password" class="form-control" required minlength="6">
+        </div>
+        
+        <div>
+          <label for="reg-confirm-password">Confirmă parola</label>
+          <input type="password" id="reg-confirm-password" class="form-control" required minlength="6">
+        </div>
+        
+        <div>
+          <label for="reg-role">Rol</label>
+          <select id="reg-role" name="role" class="form-control">
+            <option value="tourist">Turist</option>
+            <option value="guide">Ghid</option>
+          </select>
+        </div>
+        <div class="register-submit-cell">
+          <button type="submit" class="btn-primary">Creează cont</button>
+        </div>
+      </form>
+      <p class="auth-footer-text">
+        Ai deja cont? <a href="login.html">Intră în cont</a>
+      </p>
+    </div>
+  </main>
+  
+  <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem 1rem;
+}
+
+/* Card Login */
+.login-card {
+  background-color: var(--bg-card);
+  color: var(--text-light);
+  padding: 2.8rem 3rem;
+  border-radius: var(--border-radius-lg);
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+/* Dimensiunea și stilul câmpurilor doar în formularul de login */
+.login-card .form-control {
+  width: 100%;          /* Schimbă aici lățimea (ex: 100%, 85% sau 300px) */
+  padding: 12px 10px;   /* Schimbă prima valoare (12px) pentru înălțimea câmpului */
+  font-size: 15px;
+  background-color: #332E3C;
+  color: #ffffff;
+  margin-top: 6px;
+}
+
+/* Dacă alegi o lățime mai mică de 100% (ex: width: 280px), centrează blocurile din formular */
+.login-card > div {
+  width: 100%;
+  max-width: 300px;     /* Controlează lățimea maximă a câmpurilor + label-urilor */
+  margin: 0 auto;
+}
+
+.auth-title {
+  text-align: center;
+  font-weight: 400;
+}
+
+.login-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+
+.register-link {
+  color: #ffffff;
+  font-size: 1.05rem;
+  text-underline-offset: 4px;
+}
+
+.auth-error {
+  color: #ffb4a9;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Card Register */
+.register-card {
+  background-color: var(--bg-card);
+  color: var(--text-light);
+  padding: 2.5rem 3rem;
+  border-radius: var(--border-radius-lg);
+  width: 100%;
+  max-width: 580px;
+}
+
+.register-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.register-submit-cell {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.auth-footer-text {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.auth-footer-text a {
+  color: var(--text-light);
+}
+
+@media (max-width: 600px) {
+  .register-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalGuide - Rezervările mele</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/my-reservations.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">LocalGuide</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Evenimente</a>
+      <a href="my-reservations.html" class="active">Rezervările mele</a>
+      <a href="#" class="btn-nav-auth" id="logout-btn">Deconectare</a>
+    </nav>
+  </header>
+
+  <main class="page-wrapper">
+    <h1 class="page-title">Rezervările mele</h1>
+    <div id="my-reservations-container" class="reservations-list">
+      <!-- Cardurile cu rezervări sunt generate automat din app.js -->
+    </div>
+  </main>
+
+  <!-- Modal Recenzie -->
+  <div id="review-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2>Lasă o recenzie</h2>
+        <button type="button" id="close-review-modal" class="close-modal-btn">&times;</button>
+      </div>
+      <p id="review-tour-name" class="modal-subtitle">Tur selectat</p>
+
+      <form id="review-form">
+        <input type="hidden" id="review-tour-id" name="tour_id">
+
+        <div class="form-group">
+          <label>Acordă o notă (1 - 5 stele)</label>
+          <div class="star-rating" id="star-selector">
+            <span data-value="1" class="star active">★</span>
+            <span data-value="2" class="star active">★</span>
+            <span data-value="3" class="star active">★</span>
+            <span data-value="4" class="star active">★</span>
+            <span data-value="5" class="star active">★</span>
+          </div>
+          <input type="hidden" id="review-rating" name="rating" value="5">
+        </div>
+
+        <div class="form-group">
+          <label for="review-comment">Comentariul tău (opțional)</label>
+          <textarea id="review-comment" name="comment" rows="4" placeholder="Cum a fost experiența cu ghidul și traseul?"></textarea>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" id="cancel-review-btn" class="btn-secondary">Anulează</button>
+          <button type="submit" class="btn-primary">Trimite recenzia</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalGuide - Tururi Culturale Locale</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">LocalGuide</a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="events.html">Evenimente</a>
+      <a href="my-reservations.html" id="nav-reservations" style="display:none;">Rezervările mele</a>
+      <a href="login.html" class="btn-nav-auth" id="nav-auth-btn">Autentificare</a>
+    </nav>
+  </header>
+
+  <main class="home-container">
+    <section class="hero-banner">
+      <h1>Descoperă patrimoniul și poveștile ascunse din Timișoara</h1>
+      <p>Alătură-te ghizilor comunitari și pasionaților locali pentru tururi tematice de arhitectură, istorie, street art și gastronomie.</p>
+      <a href="events.html" class="btn-primary">Explorează tururile</a>
+    </section>
+
+    <section class="featured-grid">
+      <article class="category-card">
+        <div>
+          <h3>Arhitectură & Patrimoniu</h3>
+          <p>Plimbări ghidate prin piețele istorice și clădirile Secession ale orașului.</p>
+        </div>
+        <a href="events.html?theme=arhitectura" class="btn-primary">Vezi tururi</a>
+      </article>
+
+      <article class="category-card">
+        <div>
+          <h3>Street Art & Cultură Urbană</h3>
+          <p>Descoperă picturile murale și inițiativele artistice din cartierele creative.</p>
+        </div>
+        <a href="events.html?theme=street-art" class="btn-primary">Vezi tururi</a>
+      </article>
+
+      <article class="category-card">
+        <div>
+          <h3>Gastronomie Tradițională</h3>
+          <p>Degustări locale și povești despre diversitatea culinară a Banatului.</p>
+        </div>
+        <a href="events.html?theme=gastronomie" class="btn-primary">Vezi tururi</a>
+      </article>
+    </section>
+  </main>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

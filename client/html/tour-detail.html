@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalGuide - Detalii Tur</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/tour-detail.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">LocalGuide</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Evenimente</a>
+      <a href="my-reservations.html" id="nav-reservations" style="display:none;">Rezervările mele</a>
+      <a href="login.html" class="btn-nav-auth" id="nav-auth-btn">Autentificare</a>
+    </nav>
+  </header>
+
+  <main class="detail-layout">
+    <div>
+      <img src="https://placehold.co/800x320/332E3C/ffffff?text=Foto+Tur" alt="Foto tur" id="tour-image" class="tour-hero-img">
+      <h1 id="tour-title" class="tour-title-heading">Se încarcă...</h1>
+
+      <div class="info-box">
+        <p id="tour-description"></p>
+        <hr class="info-divider">
+        <p><strong>Punct de întâlnire:</strong> <span id="tour-meeting">-</span></p>
+        <p><strong>Durată:</strong> <span id="tour-duration">-</span> | <strong>Preț:</strong> <span id="tour-price">0</span> RON / persoană</p>
+      </div>
+
+      <div class="info-box">
+        <h3>Locul de întâlnire</h3>
+        <div id="meeting-map" class="meeting-map"></div>
+      </div>
+
+      <div class="info-box guide-box">
+        <img src="https://placehold.co/128x128/332E3C/ffffff?text=Ghid" alt="Foto ghid" id="guide-avatar" class="guide-avatar">
+        <div>
+          <h3 id="guide-name">Ghid</h3>
+          <p id="guide-bio" class="guide-bio-text"></p>
+        </div>
+      </div>
+
+      <div class="info-box reviews-section">
+        <div class="reviews-header">
+          <h3>Recenzii turiști</h3>
+          <span class="rating-summary" id="tour-avg-rating">★ -</span>
+        </div>
+        <div id="reviews-list" class="reviews-list"></div>
+      </div>
+    </div>
+
+    <aside class="booking-card">
+      <h2>Rezervă</h2>
+      <form id="booking-form">
+        <div class="booking-field">
+          <label for="tour-date-select">Data și ora sesiunii</label>
+          <select id="tour-date-select" name="tour_date_id" class="form-control" required></select>
+        </div>
+
+        <div class="booking-field">
+          <label for="spots-input">Număr locuri</label>
+          <input type="number" id="spots-input" name="spots_reserved" class="form-control" value="1" min="1" required>
+        </div>
+
+        <p class="booking-total">
+          Total: <strong id="total-price">0</strong> RON
+        </p>
+
+        <button type="submit" class="btn-primary booking-submit-btn" id="booking-submit">Rezervă</button>
+      </form>
+      <p id="booking-feedback" class="booking-feedback"></p>
+    </aside>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

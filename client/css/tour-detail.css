@@ -1,0 +1,150 @@
+.detail-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2.5rem;
+  padding: 2rem 3rem;
+}
+
+.tour-hero-img {
+  width: 100%;
+  height: 320px;
+  background-color: var(--bg-card);
+  border: 1px dashed var(--text-dark);
+  border-radius: var(--border-radius-lg);
+  object-fit: cover;
+}
+
+.tour-title-heading {
+  margin-top: 1.2rem;
+}
+
+.info-box {
+  background-color: var(--bg-card);
+  color: var(--text-light);
+  padding: 1.5rem;
+  border-radius: var(--border-radius-lg);
+  margin-top: 1rem;
+}
+
+.info-divider {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.guide-box {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.guide-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--btn-accent);
+  object-fit: cover;
+}
+
+.guide-bio-text {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.booking-card {
+  background-color: var(--bg-card);
+  color: var(--text-light);
+  padding: 2rem;
+  border-radius: var(--border-radius-lg);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.booking-field {
+  margin-bottom: 1rem;
+}
+
+.booking-total {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.booking-submit-btn {
+  width: 100%;
+}
+
+.booking-feedback {
+  font-size: 0.9rem;
+}
+
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rating-summary {
+  background-color: #332E3C;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #f5c518;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review-item {
+  background-color: #332E3C;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 14px 16px;
+  border-radius: 8px;
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.review-stars {
+  color: #f5c518;
+  letter-spacing: 2px;
+}
+
+.review-date {
+  color: #e0ebe4;
+  font-size: 12px;
+}
+
+.review-comment {
+  font-size: 14px;
+  color: #e0ebe4;
+  line-height: 1.4;
+}
+
+.meeting-map {
+  width: 100%;
+  height: 260px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .detail-layout {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}

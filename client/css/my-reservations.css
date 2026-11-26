@@ -1,0 +1,206 @@
+.page-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
+
+.page-subtitle {
+  margin-top: 0.4rem;
+}
+
+.reservations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.reservation-card {
+  background-color: var(--bg-card);
+  color: var(--text-light);
+  padding: 1.5rem 2rem;
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.reservation-details {
+  color: var(--text-muted);
+  margin: 0.3rem 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-pending {
+  background-color: #d9a05b;
+  color: #1a1a1a;
+}
+
+.badge-confirmed {
+  background-color: #6ab07c;
+  color: #141a16;
+}
+
+.badge-rejected,
+.badge-cancelled {
+  background-color: var(--btn-accent);
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: var(--btn-accent);
+  color: var(--text-light);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.reservation-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-review {
+  background-color: #7C77B9;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-review:hover {
+  background-color: #6d69a0;
+}
+
+/* Modal Recenzie */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal-card {
+  background-color: #4E6E58;
+  color: #ffffff;
+  width: 100%;
+  max-width: 480px;
+  padding: 28px 32px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-modal-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.modal-subtitle {
+  color: #e0ebe4;
+  font-size: 14px;
+  margin: 6px 0 18px 0;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Stele interactive */
+.star-rating {
+  display: flex;
+  gap: 8px;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.star-rating .star {
+  color: #332E3C;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.star-rating .star.active {
+  color: #f5c518;
+}
+
+.star-rating .star:hover {
+  transform: scale(1.15);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.page-title {
+  font-weight: 500;
+}
+
+.empty-state {
+  margin-top: 1rem;
+}
+
+.modal-card textarea {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #141a16;
+  background-color: #332E3C;
+  color: #ffffff;
+  font-size: 15px;
+  resize: vertical;
+  outline: none;
+}
+
+.modal-card textarea:focus {
+  border-color: #7C77B9;
+  box-shadow: 0 0 0 3px rgba(124, 119, 185, 0.35);
+}

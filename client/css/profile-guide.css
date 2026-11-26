@@ -1,0 +1,130 @@
+.profile-wrapper {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.profile-card {
+  background-color: #4E6E58;
+  color: #ffffff;
+  padding: 36px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.avatar-preview {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #332E3C;
+  border: 2px solid #cccccc;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.profile-header-info h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.profile-header-info p {
+  color: #e0ebe4;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+/* Butonul pentru selectarea pozei din dispozitiv */
+.btn-upload-photo {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #332E3C;
+  color: #ffffff;
+  border: 1px solid #141a16;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-upload-photo:hover {
+  border-color: #7C77B9;
+  box-shadow: 0 0 0 3px rgba(124, 119, 185, 0.35);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  width: 100%;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Uniformizează câmpurile din formularul de profil */
+.profile-card input[type="text"],
+.profile-card textarea {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #141a16;
+  background-color: #332E3C;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-card textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.profile-card input[type="text"]:hover,
+.profile-card input[type="text"]:focus,
+.profile-card textarea:hover,
+.profile-card textarea:focus {
+  border-color: #7C77B9;
+  box-shadow: 0 0 0 3px rgba(124, 119, 185, 0.35);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.profile-feedback {
+  margin-top: 14px;
+  font-size: 14px;
+  text-align: right;
+  color: #e0ebe4;
+}
+
+@media (max-width: 600px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .form-actions {
+    flex-direction: column;
+  }
+}
